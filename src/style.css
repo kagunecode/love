@@ -1,0 +1,433 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+@import url("https://fonts.googleapis.com/css2?family=Miriam+Libre:wght@700&family=Roboto+Mono:ital,wght@1,600&display=swap");
+
+@font-face {
+  src: url("https://www.axis-praxis.org/fonts/webfonts/MetaVariableDemo-Set.woff2")
+    format("woff2");
+  font-family: "Meta";
+  font-style: normal;
+  font-weight: normal;
+}
+
+main {
+  transition: all 0.5s;
+  -webkit-text-stroke: 4px #d6f4f4;
+  font-variation-settings: "wght" 900, "ital" 1;
+  font-size: 7rem;
+  text-align: center;
+  color: transparent;
+  font-family: "Roboto Mono", sans-serif;
+  text-shadow: 3px 3px 0px #07bccc,
+    6px 6px 0px #e601c0,
+    9px 9px 0px #e9019a,
+    12px 12px 0px #f40468,
+    18px 18px 3px #482896;
+  cursor: pointer;
+}
+
+main:hover {
+  font-variation-settings: "wght" 100, "ital" 0;
+  text-shadow: none;
+}
+
+html {
+  scroll-snap-points-y: repeat(100vh);
+  scroll-snap-type: y mandatory;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🎉</text></svg>")
+  16 0,
+  auto;
+}
+
+body {
+  background-image: linear-gradient(120deg, #ffcac9 0%, #737dfe 100%);
+  display: grid;
+  place-items: center;
+  height: 1000vh;
+  z-index: -99;
+}
+
+section {
+  scroll-snap-align: start;
+  height: 100vh;
+}
+
+p {
+  display: inline-block;
+}
+
+.title {
+  position: relative;
+  overflow: hidden;
+  color: white;
+  font-family: system-ui, sans;
+  font-weight: 800;
+  text-align: center;
+  font-size: 7.2em;
+}
+
+.subtitle {
+  color: white;
+  font-family: "Roboto Mono", sans-serif;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  font-size: 2.8em;
+}
+
+.counter {
+  color: white;
+  font-family: "Roboto Mono", sans-serif;
+  text-align: center;
+  font-size: 3.5em;
+}
+
+.desc {
+  color: white;
+  font-family: "Roboto Mono", sans-serif;
+  font-size: 1.5em;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.fa {
+  color: white;
+  text-decoration: none;
+  font-size: 1.7em;
+}
+
+.fa:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.arrow {
+  text-align: center;
+  font-size: 3em;
+}
+
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+.counter li {
+  display: inline-block;
+  font-size: 0.5em;
+  list-style-type: none;
+  padding: 0.4em;
+}
+
+.counter li span {
+  display: block;
+  font-size: 4.5rem;
+}
+
+.love-letter {
+  color: white;
+  font-family: "Roboto Mono", sans-serif;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  font-size: 1.2em;
+  border: 2px solid white;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.border {
+  height: 369px;
+  width: 290px;
+  background: transparent;
+  border-radius: 10px;
+  transition: border 1s;
+  position: relative;
+}
+
+.border:hover {
+  border: 1px solid #fff;
+}
+
+.card {
+  height: 379px;
+  width: 300px;
+  background: #808080;
+  border-radius: 10px;
+  transition: background 0.8s;
+  overflow: hidden;
+  background: #000;
+  box-shadow: 0 70px 63px -60px #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.cardtext {
+  height: 379px;
+  width: 300px;
+  background: #808080;
+  transition: background 0.8s;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.card0 {
+  background: url("../assets/1.JPG") center center no-repeat;
+  background-size: 300px;
+}
+.card0:hover {
+  background: url("../assets/1.JPG") center center no-repeat;
+  background-size: 400px;
+}
+.card0:hover h2 {
+  opacity: 1;
+}
+.card0:hover .fa {
+  opacity: 1;
+}
+
+.card1 {
+  background: url("../assets/2.jpg") center center no-repeat;
+  background-size: 300px;
+}
+.card1:hover {
+  background: url("../assets/2.jpg") center center no-repeat;
+  background-size: 400px;
+}
+.card1:hover h2 {
+  opacity: 1;
+}
+.card1:hover .fa {
+  opacity: 1;
+}
+
+.card2 {
+  background: url("../assets/3.jpg") center center no-repeat;
+  background-size: 300px;
+}
+.card2:hover {
+  background: url("../assets/3.jpg") center center no-repeat;
+  background-size: 400px;
+}
+.card2:hover h2 {
+  opacity: 1;
+}
+.card2:hover .fa {
+  opacity: 1;
+}
+
+.card3 {
+  background: url("../assets/13.jpg") center center no-repeat;
+  background-size: 300px;
+}
+.card3:hover {
+  background: url("../assets/13.jpg") center center no-repeat;
+  background-size: 400px;
+}
+.card3:hover h2 {
+  opacity: 1;
+}
+.card3:hover .fa {
+  opacity: 1;
+}
+
+.card4 {
+  background: url("../assets/5.jpg") center center no-repeat;
+  background-size: 300px;
+}
+.card4:hover {
+  background: url("../assets/5.jpg") center center no-repeat;
+  background-size: 400px;
+}
+.card4:hover h2 {
+  opacity: 1;
+}
+.card4:hover .fa {
+  opacity: 1;
+}
+
+.card5 {
+  background: url("../assets/10.jpg") center center no-repeat;
+  background-size: 550px;
+}
+.card5:hover {
+  background: url("../assets/10.jpg") center center no-repeat;
+  background-size: 650px;
+}
+.card5:hover h2 {
+  opacity: 1;
+}
+.card5:hover .fa {
+  opacity: 1;
+}
+
+.card6 {
+  background: url("../assets/8.jpg") center center no-repeat;
+  background-size: 550px;
+}
+.card6:hover {
+  background: url("../assets/8.jpg") center center no-repeat;
+  background-size: 650px;
+}
+.card6:hover h2 {
+  opacity: 1;
+}
+.card6:hover .fa {
+  opacity: 1;
+}
+
+.card7 {
+  background: url("../assets/14.jpg") center center no-repeat;
+  background-size: 550px;
+}
+.card7:hover {
+  background: url("../assets/14.jpg") center center no-repeat;
+  background-size: 650px;
+}
+.card7:hover h2 {
+  opacity: 1;
+}
+.card7:hover .fa {
+  opacity: 1;
+}
+
+h2 {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #fff;
+  margin: 20px;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+#random {
+  padding: 20px 40px;
+  background: none;
+  border: none;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 3px;
+  cursor: pointer;
+  color: white;
+}
+
+#random:after, #random:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border: 2px solid #fff;
+  transition: transform 0.2s;
+}
+
+#random:after {
+  transform: translate(3px, 3px);
+}
+
+#random:before {
+  transform: translate(-3px, -3px);
+}
+
+#random:hover:after, #random:hover:before {
+  transform: translate(0);
+}
+
+.reason-div {
+  display: block;
+  text-align: center;
+  align-items: center;
+  padding: 5em;
+  height: 13em;
+  width: 100%;
+}
+
+.heart {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  left: 50%;
+  top: 3em;
+  transform: translate(-50%, -50%);
+  background: url(https://cssanimation.rocks/images/posts/steps/heart.png) no-repeat;
+  background-position: 0 0;
+  cursor: pointer;
+  animation: fave-heart 1s steps(28);
+}
+
+.heart:hover {
+  background-position: -2800px 0;
+  transition: background 1s steps(28);
+}
+@keyframes fave-heart {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -2800px 0;
+  }
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #737dfe;
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #ffcac9; /* Add a dark-grey background on hover */
+}
+
+/* Style the header: fixed position (always stay at the top) */
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+}
+
+/* The progress container (grey background) */
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: #ffcac9;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 8px;
+  background: linear-gradient(90deg, #ffcac9 0%, #737dfe 100%);
+  width: 0%;
+}
